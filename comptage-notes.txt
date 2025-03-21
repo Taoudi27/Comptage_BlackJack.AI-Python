@@ -1,0 +1,45 @@
+Simulation de Blackjack en Java avec comptage des cartes : Développement d'une simulation de blackjack en Java intégrant une intelligence stratégique basée sur le comptage des cartes (Hi-Lo). Le programme applique les règles du jeu, analyse les probabilités et optimise les décisions pour maximiser les gains. 
+
+
+------------------------------------------------------
+
+deck:
+create_deck = créer un deck 52 cartes et le melange
+
+------------------------------------------------------
+
+game:
+gere distribution des cartes aux joueurs
+créer un deck; distribue 2 cartes a joueurs; affiche main joueurs
+
+hit; stand; bust dans playerturn
+
+------------------------------------------------------
+
+
+dealer:
+croupier pioche 2 cartes; jsuqua avoir 17; il perd si depasse 21; sinon sarrete et affiche score
+------------------------------------------------------
+counting:
+attribue valeur a chaque carte(+1 0, 1)
+met a jours compte courant
+calcul true count
+------------------------------------------------------
+betting:
+Si le True Count est ≤ 0, on mise le minimum.
+Sinon, la mise augmente en fonction du True Count (base_bet × (1 + True Count)).
+La mise ne dépasse jamais le max_bet.
+
+------------------------------------------------------
+
+blackjack:
+calcul score dune main
+
+
+------------------------------------------------------
+
+bot:
+joue automatiquement suivant la strategie
+
+
+main = simulation: 
